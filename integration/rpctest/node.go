@@ -14,7 +14,7 @@ import (
 	"runtime"
 	"time"
 
-	rpc "github.com/gcash/bchd/rpcclient"
+	rpc "github.com/chernyshev/bchd/rpcclient"
 	"github.com/gcash/bchutil"
 )
 

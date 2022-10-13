@@ -209,10 +209,10 @@ github.com/fsnotify/fsnotify v1.4.9/go.mod h1:znqG4EE+3YCdAaPaxE2ZRY/06pZUdp0tY4
 github.com/fullstorydev/grpcurl v1.6.0/go.mod h1:ZQ+ayqbKMJNhzLmbpCiurTVlaK2M/3nqZCxaQ2Ze/sM=
 github.com/fzipp/gocyclo v0.3.1 h1:A9UeX3HJSXTBzvHzhqoYVuE0eAhe+aM8XBCCwsPMZOc=
 github.com/fzipp/gocyclo v0.3.1/go.mod h1:DJHO6AUmbdqj2ET4Z9iArSuwWgYDRryYt2wASxc7x3E=
-github.com/gcash/bchd v0.14.7/go.mod h1:Gk/O1ktRVW5Kao0RsnVXp3bWxeYQadqawZ1Im9HE78M=
-github.com/gcash/bchd v0.15.2/go.mod h1:k9wIjgwnhbrAw+ruIPZ2tHZMzfFNdyUnORZZX7lqXGY=
-github.com/gcash/bchd v0.17.1/go.mod h1:qwEZ/wr6LyUo5IBgAPcAbYHzXrjnr5gc4tj03n1TwKc=
-github.com/gcash/bchd v0.17.2-0.20201218180520-5708823e0e99/go.mod h1:qwEZ/wr6LyUo5IBgAPcAbYHzXrjnr5gc4tj03n1TwKc=
+github.com/chernyshev/bchd v0.14.7/go.mod h1:Gk/O1ktRVW5Kao0RsnVXp3bWxeYQadqawZ1Im9HE78M=
+github.com/chernyshev/bchd v0.15.2/go.mod h1:k9wIjgwnhbrAw+ruIPZ2tHZMzfFNdyUnORZZX7lqXGY=
+github.com/chernyshev/bchd v0.17.1/go.mod h1:qwEZ/wr6LyUo5IBgAPcAbYHzXrjnr5gc4tj03n1TwKc=
+github.com/chernyshev/bchd v0.17.2-0.20201218180520-5708823e0e99/go.mod h1:qwEZ/wr6LyUo5IBgAPcAbYHzXrjnr5gc4tj03n1TwKc=
 github.com/gcash/bchlog v0.0.0-20180913005452-b4f036f92fa6 h1:3pZvWJ8MSfWstGrb8Hfh4ZpLyZNcXypcGx2Ju4ZibVM=
 github.com/gcash/bchlog v0.0.0-20180913005452-b4f036f92fa6/go.mod h1:PpfmXTLfjRp7Tf6v/DCGTRXHz+VFbiRcsoUxi7HvwlQ=
 github.com/gcash/bchutil v0.0.0-20190625002603-800e62fe9aff/go.mod h1:zXSP0Fg2L52wpSEDApQDQMiSygnQiK5HDquDl0a5BHg=

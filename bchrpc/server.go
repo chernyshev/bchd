@@ -14,16 +14,16 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/gcash/bchd/bchrpc/pb"
-	"github.com/gcash/bchd/blockchain"
-	"github.com/gcash/bchd/blockchain/indexers"
-	"github.com/gcash/bchd/chaincfg"
-	"github.com/gcash/bchd/chaincfg/chainhash"
-	"github.com/gcash/bchd/database"
-	"github.com/gcash/bchd/mempool"
-	"github.com/gcash/bchd/mining"
-	"github.com/gcash/bchd/txscript"
-	"github.com/gcash/bchd/wire"
+	"github.com/chernyshev/bchd/bchrpc/pb"
+	"github.com/chernyshev/bchd/blockchain"
+	"github.com/chernyshev/bchd/blockchain/indexers"
+	"github.com/chernyshev/bchd/chaincfg"
+	"github.com/chernyshev/bchd/chaincfg/chainhash"
+	"github.com/chernyshev/bchd/database"
+	"github.com/chernyshev/bchd/mempool"
+	"github.com/chernyshev/bchd/mining"
+	"github.com/chernyshev/bchd/txscript"
+	"github.com/chernyshev/bchd/wire"
 	"github.com/gcash/bchutil"
 	"github.com/gcash/bchutil/merkleblock"
 	"github.com/simpleledgerinc/goslp"
@@ -1579,12 +1579,11 @@ func isMaybeSlpTransaction(txn *wire.MsgTx) bool {
 //
 // When use_spec_validity_judgement is true, there are three cases where the is_valid response property
 // will be returned as valid, instead of invalid, as per the slp specification.
-//   1) inputs > outputs
-//   2) missing transaction outputs
-//   3) burned inputs from other tokens
+//  1. inputs > outputs
+//  2. missing transaction outputs
+//  3. burned inputs from other tokens
 //
 // required_slp_burns is not used when use_spec_validity_judgement is set to true.
-//
 func (s *GrpcServer) CheckSlpTransaction(ctx context.Context, req *pb.CheckSlpTransactionRequest) (*pb.CheckSlpTransactionResponse, error) {
 
 	if s.slpIndex == nil {
@@ -1895,7 +1894,8 @@ func (s *GrpcServer) checkTransactionSlpValidity(msgTx *wire.MsgTx, requiredBurn
 // to be checked elsewhere.
 //
 // NOTE: nft1 child genesis is allowed without error as long as the burned outpoint is a
-//       nft1 Group type and the quanity is 1.
+//
+//	nft1 Group type and the quanity is 1.
 func (s *GrpcServer) getSlpIndexEntryAndCheckBurnOtherToken(outpoint wire.OutPoint, requiredBurns []*pb.SlpRequiredBurn, txnSlpMsg v1parser.ParseResult, inputIdx int) (*indexers.SlpTxEntry, error) {
 
 	slpEntry, err := s.getSlpIndexEntry(&outpoint.Hash)
@@ -2927,7 +2927,6 @@ func (s *GrpcServer) getSlpToken(hash *chainhash.Hash, vout uint32, scriptPubKey
 // slpEventHandler handles valid slp transaction events from mempool and block
 //
 // NOTE: this is launched as a goroutine and does not return errors!
-//
 func (s *GrpcServer) slpEventHandler() {
 	if s.slpIndex == nil {
 		return
@@ -2981,7 +2980,6 @@ func (s *GrpcServer) slpEventHandler() {
 // checkSlpTxOnEvent is used to make sure slp information has been processed before
 // returning subscriber event info to the client.  Without this, a race condition exists
 // where the subscriber event can be returned before the slp validation is completed.
-//
 func (s *GrpcServer) checkSlpTxOnEvent(tx *wire.MsgTx, eventStr string) bool {
 	if !isMaybeSlpTransaction(tx) {
 		return false
@@ -3005,7 +3003,6 @@ func (s *GrpcServer) checkSlpTxOnEvent(tx *wire.MsgTx, eventStr string) bool {
 }
 
 // marshalTokenMetadata returns marshalled token metadata for the provided tokenID hash
-//
 func (s *GrpcServer) marshalTokenMetadata(tokenID chainhash.Hash) (*pb.SlpTokenMetadata, error) {
 
 	if s.slpIndex == nil {

@@ -5,7 +5,7 @@
 package blockchain
 
 import (
-	"github.com/gcash/bchd/chaincfg"
+	"github.com/chernyshev/bchd/chaincfg"
 	"math/big"
 	"testing"
 	"time"

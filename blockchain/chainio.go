@@ -12,9 +12,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/gcash/bchd/chaincfg/chainhash"
-	"github.com/gcash/bchd/database"
-	"github.com/gcash/bchd/wire"
+	"github.com/chernyshev/bchd/chaincfg/chainhash"
+	"github.com/chernyshev/bchd/database"
+	"github.com/chernyshev/bchd/wire"
 	"github.com/gcash/bchutil"
 )
 
@@ -1062,17 +1062,18 @@ func dbPutBestState(dbTx database.Tx, snapshot *BestState, workSum *big.Int) err
 //
 // The serialized format is:
 //
-//   <status code><consistent hash>
+//	<status code><consistent hash>
 //
-//   Field             Type             Size
-//   status code       byte             1
-//   consistent hash   chainhash.Hash   chainhash.HashSize
+//	Field             Type             Size
+//	status code       byte             1
+//	consistent hash   chainhash.Hash   chainhash.HashSize
 //
 // The possible values for the state code are:
 //
-//   1: consistent with the given hash, no flush ongoing
-//   2: flush ongoing from the stored consistent hash to best state (see best
-//      state bucket)
+//	1: consistent with the given hash, no flush ongoing
+//	2: flush ongoing from the stored consistent hash to best state (see best
+//	   state bucket)
+//
 // -----------------------------------------------------------------------------
 const (
 	// UTXO consistency status (UCS) codes are used to indicate the

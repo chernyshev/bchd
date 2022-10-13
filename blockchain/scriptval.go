@@ -11,8 +11,8 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/gcash/bchd/txscript"
-	"github.com/gcash/bchd/wire"
+	"github.com/chernyshev/bchd/txscript"
+	"github.com/chernyshev/bchd/wire"
 	"github.com/gcash/bchutil"
 )
 

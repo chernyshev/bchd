@@ -5,8 +5,8 @@
 package blockchain
 
 import (
-	"github.com/gcash/bchd/bchec"
-	"github.com/gcash/bchd/txscript"
+	"github.com/chernyshev/bchd/bchec"
+	"github.com/chernyshev/bchd/txscript"
 )
 
 // -----------------------------------------------------------------------------

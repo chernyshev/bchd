@@ -12,9 +12,9 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/gcash/bchd/btcjson"
-	"github.com/gcash/bchd/chaincfg/chainhash"
-	"github.com/gcash/bchd/wire"
+	"github.com/chernyshev/bchd/btcjson"
+	"github.com/chernyshev/bchd/chaincfg/chainhash"
+	"github.com/chernyshev/bchd/wire"
 	"github.com/gcash/bchutil"
 )
 
@@ -56,7 +56,8 @@ func (c *Client) DebugLevelAsync(levelSpec string) FutureDebugLevelResult {
 // specification.
 //
 // The levelspec can be either a debug level or of the form:
-// 	<subsystem>=<level>,<subsystem2>=<level2>,...
+//
+//	<subsystem>=<level>,<subsystem2>=<level2>,...
 //
 // Additionally, the special keyword 'show' can be used to get a list of the
 // available subsystems.

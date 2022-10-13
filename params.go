@@ -5,8 +5,8 @@
 package main
 
 import (
-	"github.com/gcash/bchd/chaincfg"
-	"github.com/gcash/bchd/wire"
+	"github.com/chernyshev/bchd/chaincfg"
+	"github.com/chernyshev/bchd/wire"
 )
 
 // activeNetParams is a pointer to the parameters specific to the

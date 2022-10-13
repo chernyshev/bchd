@@ -13,8 +13,8 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/gcash/bchd/btcjson"
-	"github.com/gcash/bchd/version"
+	"github.com/chernyshev/bchd/btcjson"
+	"github.com/chernyshev/bchd/version"
 	"github.com/gcash/bchutil"
 	flags "github.com/jessevdk/go-flags"
 )
@@ -160,10 +160,10 @@ func cleanAndExpandPath(path string) string {
 // line options.
 //
 // The configuration proceeds as follows:
-// 	1) Start with a default config with sane settings
-// 	2) Pre-parse the command line to check for an alternative config file
-// 	3) Load configuration file overwriting defaults with any specified options
-// 	4) Parse CLI options and overwrite/add any specified options
+//  1. Start with a default config with sane settings
+//  2. Pre-parse the command line to check for an alternative config file
+//  3. Load configuration file overwriting defaults with any specified options
+//  4. Parse CLI options and overwrite/add any specified options
 //
 // The above results in functioning properly without any config settings
 // while still allowing the user to override settings with config files and

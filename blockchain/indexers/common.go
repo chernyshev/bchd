@@ -11,9 +11,9 @@ import (
 	"encoding/binary"
 	"errors"
 
-	"github.com/gcash/bchd/blockchain"
-	"github.com/gcash/bchd/chaincfg/chainhash"
-	"github.com/gcash/bchd/database"
+	"github.com/chernyshev/bchd/blockchain"
+	"github.com/chernyshev/bchd/chaincfg/chainhash"
+	"github.com/chernyshev/bchd/database"
 	"github.com/gcash/bchutil"
 )
 

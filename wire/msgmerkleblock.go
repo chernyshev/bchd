@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/gcash/bchd/chaincfg/chainhash"
+	"github.com/chernyshev/bchd/chaincfg/chainhash"
 )
 
 // maxFlagsPerMerkleBlock returns the maximum number of flag bytes that could

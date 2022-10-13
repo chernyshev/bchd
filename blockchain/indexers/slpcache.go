@@ -8,7 +8,7 @@ import (
 	"sync"
 
 	"github.com/bluele/gcache"
-	"github.com/gcash/bchd/chaincfg/chainhash"
+	"github.com/chernyshev/bchd/chaincfg/chainhash"
 	"github.com/gcash/bchutil"
 )
 

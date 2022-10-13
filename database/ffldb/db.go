@@ -21,10 +21,10 @@ import (
 	"github.com/btcsuite/goleveldb/leveldb/iterator"
 	"github.com/btcsuite/goleveldb/leveldb/opt"
 	"github.com/btcsuite/goleveldb/leveldb/util"
-	"github.com/gcash/bchd/chaincfg/chainhash"
-	"github.com/gcash/bchd/database"
-	"github.com/gcash/bchd/database/internal/treap"
-	"github.com/gcash/bchd/wire"
+	"github.com/chernyshev/bchd/chaincfg/chainhash"
+	"github.com/chernyshev/bchd/database"
+	"github.com/chernyshev/bchd/database/internal/treap"
+	"github.com/chernyshev/bchd/wire"
 	"github.com/gcash/bchutil"
 )
 

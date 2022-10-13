@@ -8,7 +8,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/gcash/bchd/bchrpc"
+	"github.com/chernyshev/bchd/bchrpc"
 	"github.com/gorilla/mux"
 	grpc_prometheus "github.com/grpc-ecosystem/go-grpc-prometheus"
 	"github.com/improbable-eng/grpc-web/go/grpcweb"

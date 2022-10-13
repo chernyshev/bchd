@@ -13,7 +13,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/gcash/bchd/chaincfg/chainhash"
+	"github.com/chernyshev/bchd/chaincfg/chainhash"
 )
 
 // genesisCoinbaseTx is the coinbase transaction for the genesis blocks for

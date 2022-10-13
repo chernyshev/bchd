@@ -8,7 +8,7 @@
 package database
 
 import (
-	"github.com/gcash/bchd/chaincfg/chainhash"
+	"github.com/chernyshev/bchd/chaincfg/chainhash"
 	"github.com/gcash/bchutil"
 )
 

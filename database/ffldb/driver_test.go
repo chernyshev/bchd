@@ -12,9 +12,9 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/gcash/bchd/chaincfg"
-	"github.com/gcash/bchd/database"
-	"github.com/gcash/bchd/database/ffldb"
+	"github.com/chernyshev/bchd/chaincfg"
+	"github.com/chernyshev/bchd/database"
+	"github.com/chernyshev/bchd/database/ffldb"
 	"github.com/gcash/bchutil"
 )
 

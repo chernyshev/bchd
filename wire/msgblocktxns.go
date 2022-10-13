@@ -3,7 +3,7 @@ package wire
 import (
 	"errors"
 	"fmt"
-	"github.com/gcash/bchd/chaincfg/chainhash"
+	"github.com/chernyshev/bchd/chaincfg/chainhash"
 	"io"
 )
 

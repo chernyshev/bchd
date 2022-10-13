@@ -21,13 +21,13 @@ import (
 
 	"sort"
 
-	"github.com/gcash/bchd/bchec"
-	"github.com/gcash/bchd/blockchain"
-	"github.com/gcash/bchd/chaincfg"
-	"github.com/gcash/bchd/chaincfg/chainhash"
-	"github.com/gcash/bchd/mining"
-	"github.com/gcash/bchd/txscript"
-	"github.com/gcash/bchd/wire"
+	"github.com/chernyshev/bchd/bchec"
+	"github.com/chernyshev/bchd/blockchain"
+	"github.com/chernyshev/bchd/chaincfg"
+	"github.com/chernyshev/bchd/chaincfg/chainhash"
+	"github.com/chernyshev/bchd/mining"
+	"github.com/chernyshev/bchd/txscript"
+	"github.com/chernyshev/bchd/wire"
 	"github.com/gcash/bchutil"
 )
 
@@ -476,9 +476,9 @@ func createSpendTxForTx(tx *wire.MsgTx, fee bchutil.Amount) *wire.MsgTx {
 // - A coinbase that pays the required subsidy to an OP_TRUE script
 // - When a spendable output is provided:
 //   - A transaction that spends from the provided output the following outputs:
-//     - One that pays the inputs amount minus 1 atom to an OP_TRUE script
-//     - One that contains an OP_RETURN output with a random uint64 in order to
-//       ensure the transaction has a unique hash
+//   - One that pays the inputs amount minus 1 atom to an OP_TRUE script
+//   - One that contains an OP_RETURN output with a random uint64 in order to
+//     ensure the transaction has a unique hash
 //
 // Additionally, if one or more munge functions are specified, they will be
 // invoked with the block prior to solving it.  This provides callers with the

@@ -14,11 +14,11 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"github.com/gcash/bchd/blockchain"
-	"github.com/gcash/bchd/blockchain/slpgraphsearch"
-	"github.com/gcash/bchd/chaincfg/chainhash"
-	"github.com/gcash/bchd/database"
-	"github.com/gcash/bchd/wire"
+	"github.com/chernyshev/bchd/blockchain"
+	"github.com/chernyshev/bchd/blockchain/slpgraphsearch"
+	"github.com/chernyshev/bchd/chaincfg/chainhash"
+	"github.com/chernyshev/bchd/database"
+	"github.com/chernyshev/bchd/wire"
 	"github.com/gcash/bchutil"
 	"github.com/simpleledgerinc/goslp"
 	"github.com/simpleledgerinc/goslp/v1parser"
@@ -376,7 +376,6 @@ func dbFetchSlpIndexEntry(dbTx database.Tx, txHash *chainhash.Hash) (*SlpTxEntry
 // latest slp transaction entry for every transaction in the passed block.
 //
 // This method should only be called by DisconnectBlock()
-//
 func dbRemoveSlpIndexEntries(dbTx database.Tx, block *bchutil.Block) error {
 	// toposort and reverse order so we can unwind slp token metadata state if needed
 	txs := TopologicallySortTxs(block.Transactions())
@@ -656,7 +655,6 @@ func (idx *SlpIndex) AddGraphSearchTxn(tx *wire.MsgTx) {
 // LoadSlpGraphSearchDb is used to load data needed for slp graph search
 //
 // NOTE: this is launched as a goroutine and does not return errors!
-//
 func (idx *SlpIndex) LoadSlpGraphSearchDb(fetchTxn func(txnHash *chainhash.Hash) ([]byte, error), initWg *sync.WaitGroup, interupt *int32) {
 
 	// this method shouldn't be called more than once or if gs is disabled

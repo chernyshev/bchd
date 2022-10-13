@@ -1,5 +1,5 @@
 syntax = "proto3";
-option go_package="github.com/gcash/bchd/bchrpc/pb";
+option go_package="github.com/chernyshev/bchd/bchrpc/pb";
 
 package pb;
 option java_package = "cash.bchd.rpc";
@@ -90,7 +90,7 @@ service bchrpc {
     // **Requires SlpIndex**
     rpc GetSlpTokenMetadata(GetSlpTokenMetadataRequest) returns (GetSlpTokenMetadataResponse) {}
 
-    // GetSlpParsedScript returns marshalled object from parsing an slp pubKeyScript 
+    // GetSlpParsedScript returns marshalled object from parsing an slp pubKeyScript
     // using goslp package.  This endpoint does not require SlpIndex.
     rpc GetSlpParsedScript(GetSlpParsedScriptRequest) returns (GetSlpParsedScriptResponse) {}
 
@@ -475,11 +475,11 @@ message CheckSlpTransactionRequest {
     // item in required_slp_burns property.
     //
     // When use_spec_validity_judgement is true, there are three cases where the is_valid response property
-    // will be returned as valid, instead of invalid, as per the slp specification.  
+    // will be returned as valid, instead of invalid, as per the slp specification.
     //   1) inputs > outputs
     //   2) missing transaction outputs
     //   3) burned inputs from other tokens
-    // 
+    //
     // required_slp_burns is not used when use_spec_validity_judgement is set to true.
     //
     bool use_spec_validity_judgement = 3;

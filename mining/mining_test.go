@@ -6,9 +6,9 @@ package mining
 
 import (
 	"container/heap"
-	"github.com/gcash/bchd/blockchain"
-	"github.com/gcash/bchd/chaincfg"
-	"github.com/gcash/bchd/txscript"
+	"github.com/chernyshev/bchd/blockchain"
+	"github.com/chernyshev/bchd/chaincfg"
+	"github.com/chernyshev/bchd/txscript"
 	"math/rand"
 	"testing"
 

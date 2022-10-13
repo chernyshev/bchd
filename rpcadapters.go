@@ -7,12 +7,12 @@ package main
 import (
 	"sync/atomic"
 
-	"github.com/gcash/bchd/blockchain"
-	"github.com/gcash/bchd/chaincfg/chainhash"
-	"github.com/gcash/bchd/mempool"
-	"github.com/gcash/bchd/netsync"
-	"github.com/gcash/bchd/peer"
-	"github.com/gcash/bchd/wire"
+	"github.com/chernyshev/bchd/blockchain"
+	"github.com/chernyshev/bchd/chaincfg/chainhash"
+	"github.com/chernyshev/bchd/mempool"
+	"github.com/chernyshev/bchd/netsync"
+	"github.com/chernyshev/bchd/peer"
+	"github.com/chernyshev/bchd/wire"
 	"github.com/gcash/bchutil"
 )
 

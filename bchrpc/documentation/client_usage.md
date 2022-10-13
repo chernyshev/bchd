@@ -94,7 +94,7 @@ import (
 	"fmt"
 	"path/filepath"
 
-	pb "github.com/gcash/bchd/bchrpc/pb"
+	pb "github.com/chernyshev/bchd/bchrpc/pb"
 	"golang.org/x/net/context"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials"
@@ -165,7 +165,7 @@ If connecting to a node using a self signed cert you will need to use:
 ```javascript
 export NODE_TLS_REJECT_UNAUTHORIZED=0
 ```
-**More Examples**: [here](https://github.com/gcash/bchd/tree/master/bchrpc/documentation/client-usage-examples/nodejs-grpc)
+**More Examples**: [here](https://github.com/chernyshev/bchd/tree/master/bchrpc/documentation/client-usage-examples/nodejs-grpc)
 
 ## Python
 

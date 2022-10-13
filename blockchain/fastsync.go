@@ -11,10 +11,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/gcash/bchd/bchec"
-	"github.com/gcash/bchd/chaincfg"
-	"github.com/gcash/bchd/chaincfg/chainhash"
-	"github.com/gcash/bchd/wire"
+	"github.com/chernyshev/bchd/bchec"
+	"github.com/chernyshev/bchd/chaincfg"
+	"github.com/chernyshev/bchd/chaincfg/chainhash"
+	"github.com/chernyshev/bchd/wire"
 
 	"github.com/btcsuite/go-socks/socks"
 	"github.com/zquestz/grab"

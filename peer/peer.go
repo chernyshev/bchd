@@ -20,11 +20,11 @@ import (
 	"time"
 
 	"github.com/btcsuite/go-socks/socks"
+	"github.com/chernyshev/bchd/blockchain"
+	"github.com/chernyshev/bchd/chaincfg"
+	"github.com/chernyshev/bchd/chaincfg/chainhash"
+	"github.com/chernyshev/bchd/wire"
 	"github.com/davecgh/go-spew/spew"
-	"github.com/gcash/bchd/blockchain"
-	"github.com/gcash/bchd/chaincfg"
-	"github.com/gcash/bchd/chaincfg/chainhash"
-	"github.com/gcash/bchd/wire"
 )
 
 const (
@@ -2284,10 +2284,10 @@ func (p *Peer) writeLocalVersionMsg() error {
 // peer. The events should occur in the following order, otherwise an error is
 // returned:
 //
-//   1. Remote peer sends their version.
-//   2. We send our version.
-//   3. We send our verack.
-//   4. Remote peer sends their verack.
+//  1. Remote peer sends their version.
+//  2. We send our version.
+//  3. We send our verack.
+//  4. Remote peer sends their verack.
 func (p *Peer) negotiateInboundProtocol() error {
 	if err := p.readRemoteVersionMsg(); err != nil {
 		return err
@@ -2309,10 +2309,10 @@ func (p *Peer) negotiateInboundProtocol() error {
 // peer. The events should occur in the following order, otherwise an error is
 // returned:
 //
-//   1. We send our version.
-//   2. Remote peer sends their version.
-//   3. Remote peer sends their verack.
-//   4. We send our verack.
+//  1. We send our version.
+//  2. Remote peer sends their version.
+//  3. Remote peer sends their verack.
+//  4. We send our verack.
 func (p *Peer) negotiateOutboundProtocol() error {
 	if err := p.writeLocalVersionMsg(); err != nil {
 		return err

@@ -15,11 +15,11 @@ import (
 	"runtime/debug"
 	"runtime/pprof"
 
-	"github.com/gcash/bchd/blockchain/indexers"
-	"github.com/gcash/bchd/database"
-	"github.com/gcash/bchd/limits"
-	"github.com/gcash/bchd/version"
-	"github.com/gcash/bchd/wire"
+	"github.com/chernyshev/bchd/blockchain/indexers"
+	"github.com/chernyshev/bchd/database"
+	"github.com/chernyshev/bchd/limits"
+	"github.com/chernyshev/bchd/version"
+	"github.com/chernyshev/bchd/wire"
 )
 
 const (

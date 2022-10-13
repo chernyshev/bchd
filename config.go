@@ -21,17 +21,17 @@ import (
 	"strings"
 	"time"
 
-	"github.com/gcash/bchd/mining"
+	"github.com/chernyshev/bchd/mining"
 
 	"github.com/btcsuite/go-socks/socks"
-	"github.com/gcash/bchd/chaincfg"
-	"github.com/gcash/bchd/chaincfg/chainhash"
-	"github.com/gcash/bchd/connmgr"
-	"github.com/gcash/bchd/database"
-	_ "github.com/gcash/bchd/database/ffldb"
-	"github.com/gcash/bchd/mempool"
-	"github.com/gcash/bchd/peer"
-	"github.com/gcash/bchd/version"
+	"github.com/chernyshev/bchd/chaincfg"
+	"github.com/chernyshev/bchd/chaincfg/chainhash"
+	"github.com/chernyshev/bchd/connmgr"
+	"github.com/chernyshev/bchd/database"
+	_ "github.com/chernyshev/bchd/database/ffldb"
+	"github.com/chernyshev/bchd/mempool"
+	"github.com/chernyshev/bchd/peer"
+	"github.com/chernyshev/bchd/version"
 	"github.com/gcash/bchutil"
 
 	flags "github.com/jessevdk/go-flags"
@@ -435,10 +435,10 @@ func newConfigParser(cfg *config, so *serviceOptions, options flags.Options) *fl
 // line options.
 //
 // The configuration proceeds as follows:
-// 	1) Start with a default config with sane settings
-// 	2) Pre-parse the command line to check for an alternative config file
-// 	3) Load configuration file overwriting defaults with any specified options
-// 	4) Parse CLI options and overwrite/add any specified options
+//  1. Start with a default config with sane settings
+//  2. Pre-parse the command line to check for an alternative config file
+//  3. Load configuration file overwriting defaults with any specified options
+//  4. Parse CLI options and overwrite/add any specified options
 //
 // The above results in bchd functioning properly without any config settings
 // while still allowing the user to override settings with config files and

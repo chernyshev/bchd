@@ -10,10 +10,10 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/gcash/bchd/chaincfg"
-	"github.com/gcash/bchd/database"
-	_ "github.com/gcash/bchd/database/ffldb"
-	"github.com/gcash/bchd/wire"
+	"github.com/chernyshev/bchd/chaincfg"
+	"github.com/chernyshev/bchd/database"
+	_ "github.com/chernyshev/bchd/database/ffldb"
+	"github.com/chernyshev/bchd/wire"
 	"github.com/gcash/bchutil"
 )
 
@@ -22,8 +22,8 @@ func ExampleCreate() {
 	// This example assumes the ffldb driver is imported.
 	//
 	// import (
-	// 	"github.com/gcash/bchd/database"
-	// 	_ "github.com/gcash/bchd/database/ffldb"
+	// 	"github.com/chernyshev/bchd/database"
+	// 	_ "github.com/chernyshev/bchd/database/ffldb"
 	// )
 
 	// Create a database and schedule it to be closed and removed on exit.
@@ -48,8 +48,8 @@ func Example_basicUsage() {
 	// This example assumes the ffldb driver is imported.
 	//
 	// import (
-	// 	"github.com/gcash/bchd/database"
-	// 	_ "github.com/gcash/bchd/database/ffldb"
+	// 	"github.com/chernyshev/bchd/database"
+	// 	_ "github.com/chernyshev/bchd/database/ffldb"
 	// )
 
 	// Create a database and schedule it to be closed and removed on exit.
@@ -114,8 +114,8 @@ func Example_blockStorageAndRetrieval() {
 	// This example assumes the ffldb driver is imported.
 	//
 	// import (
-	// 	"github.com/gcash/bchd/database"
-	// 	_ "github.com/gcash/bchd/database/ffldb"
+	// 	"github.com/chernyshev/bchd/database"
+	// 	_ "github.com/chernyshev/bchd/database/ffldb"
 	// )
 
 	// Create a database and schedule it to be closed and removed on exit.

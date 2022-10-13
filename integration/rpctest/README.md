@@ -1,9 +1,9 @@
 rpctest
 =======
 
-[![Build Status](https://travis-ci.org/gcash/bchd.png?branch=master)](https://travis-ci.org/gcash/bchd)
+[![Build Status](https://travis-ci.org/chernyshev/bchd.png?branch=master)](https://travis-ci.org/chernyshev/bchd)
 [![ISC License](http://img.shields.io/badge/license-ISC-blue.svg)](http://copyfree.org)
-[![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg)](http://godoc.org/github.com/gcash/bchd/integration/rpctest)
+[![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg)](http://godoc.org/github.com/chernyshev/bchd/integration/rpctest)
 
 Package rpctest provides a bchd-specific RPC testing harness crafting and
 executing integration tests by driving a `bchd` instance via the `RPC`
@@ -20,7 +20,7 @@ systems/integration tests.
 ## Installation and Updating
 
 ```bash
-$ go get -u github.com/gcash/bchd/integration/rpctest
+$ go get -u github.com/chernyshev/bchd/integration/rpctest
 ```
 
 ## License

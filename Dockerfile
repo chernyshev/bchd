@@ -5,10 +5,10 @@ FROM golang:1.16
 LABEL maintainer="Josh Ellithorpe <quest@mac.com>"
 
 # Copy the local package files to the container's workspace.
-ADD . /go/src/github.com/gcash/bchd
+ADD . /go/src/github.com/chernyshev/bchd
 
 # Switch to the correct working directory.
-WORKDIR /go/src/github.com/gcash/bchd
+WORKDIR /go/src/github.com/chernyshev/bchd
 
 # Build the code and the cli client.
 RUN go install .

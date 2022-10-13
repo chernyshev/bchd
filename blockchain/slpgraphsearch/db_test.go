@@ -8,8 +8,8 @@ import (
 	"os"
 	"testing"
 
-	"github.com/gcash/bchd/chaincfg/chainhash"
-	"github.com/gcash/bchd/wire"
+	"github.com/chernyshev/bchd/chaincfg/chainhash"
+	"github.com/chernyshev/bchd/wire"
 	"github.com/simpleledgerinc/goslp"
 )
 

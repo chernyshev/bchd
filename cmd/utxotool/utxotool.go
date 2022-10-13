@@ -10,10 +10,10 @@ import (
 	"path/filepath"
 	"runtime"
 
-	"github.com/gcash/bchd/blockchain"
-	"github.com/gcash/bchd/blockchain/indexers"
-	"github.com/gcash/bchd/database"
-	"github.com/gcash/bchd/limits"
+	"github.com/chernyshev/bchd/blockchain"
+	"github.com/chernyshev/bchd/blockchain/indexers"
+	"github.com/chernyshev/bchd/database"
+	"github.com/chernyshev/bchd/limits"
 	"github.com/gcash/bchlog"
 )
 

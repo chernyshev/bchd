@@ -2,8 +2,8 @@ package wire
 
 import (
 	"bytes"
+	"github.com/chernyshev/bchd/chaincfg/chainhash"
 	"github.com/davecgh/go-spew/spew"
-	"github.com/gcash/bchd/chaincfg/chainhash"
 	"reflect"
 	"testing"
 )
