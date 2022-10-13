@@ -12,9 +12,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/btcsuite/btcd/btcutil"
-	"github.com/btcsuite/btcd/chaincfg"
-	"github.com/btcsuite/btcd/wire"
+	"github.com/chernyshev/bchd/btcutil"
+	"github.com/chernyshev/bchd/chaincfg"
+	"github.com/chernyshev/bchd/wire"
 	"golang.org/x/crypto/ripemd160"
 )
 

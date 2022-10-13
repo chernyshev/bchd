@@ -14,8 +14,8 @@ package psbt
 import (
 	"bytes"
 	"fmt"
-	"github.com/btcsuite/btcd/txscript"
-	"github.com/btcsuite/btcd/wire"
+	"github.com/chernyshev/bchd/txscript"
+	"github.com/chernyshev/bchd/wire"
 )
 
 // isFinalized considers this input finalized if it contains at least one of
