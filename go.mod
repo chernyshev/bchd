@@ -1,4 +1,4 @@
-module github.com/gcash/bchd
+module github.com/chernyshev/bchd
 
 go 1.12
 
