@@ -12,7 +12,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/chernyshev/bchd/btcutil"
+	"github.com/chernyshev/bchd/bchutil"
 	"github.com/chernyshev/bchd/chaincfg"
 	"github.com/chernyshev/bchd/wire"
 	"golang.org/x/crypto/ripemd160"

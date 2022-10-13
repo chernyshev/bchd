@@ -1,11 +1,11 @@
-module github.com/chernyshev/bchd/btcutil/psbt
+module github.com/chernyshev/bchd/bchutil/psbt
 
 go 1.17
 
 require (
 	github.com/chernyshev/bchd v0.23.0
 	github.com/chernyshev/bchd/btcec/v2 v2.1.3
-	github.com/chernyshev/bchd/btcutil v1.1.0
+	github.com/chernyshev/bchd/bchutil v1.1.0
 	github.com/chernyshev/bchd/chaincfg/chainhash v1.0.1
 	github.com/davecgh/go-spew v1.1.1
 	github.com/stretchr/testify v1.7.0
@@ -21,6 +21,6 @@ require (
 	gopkg.in/yaml.v3 v3.0.0-20200313102051-9f266ea9e77c // indirect
 )
 
-replace github.com/chernyshev/bchd/btcutil => ../
+replace github.com/chernyshev/bchd/bchutil => ../
 
 replace github.com/chernyshev/bchd => ../..

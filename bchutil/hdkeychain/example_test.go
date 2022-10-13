@@ -7,7 +7,7 @@ package hdkeychain_test
 import (
 	"fmt"
 
-	"github.com/chernyshev/bchd/btcutil/hdkeychain"
+	"github.com/chernyshev/bchd/bchutil/hdkeychain"
 	"github.com/chernyshev/bchd/chaincfg"
 )
 

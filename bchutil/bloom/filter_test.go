@@ -9,10 +9,10 @@ import (
 	"encoding/hex"
 	"testing"
 
+	"github.com/chernyshev/bchd/bchutil"
+	"github.com/chernyshev/bchd/bchutil/bloom"
 	"github.com/chernyshev/bchd/chaincfg/chainhash"
 	"github.com/chernyshev/bchd/wire"
-	"github.com/chernyshev/bchd/btcutil"
-	"github.com/chernyshev/bchd/btcutil/bloom"
 )
 
 // TestFilterLarge ensures a maximum sized filter can be created.

@@ -14,7 +14,7 @@ import (
 	"bytes"
 	"crypto/sha256"
 
-	"github.com/chernyshev/bchd/btcutil"
+	"github.com/chernyshev/bchd/bchutil"
 	"github.com/chernyshev/bchd/txscript"
 	"github.com/chernyshev/bchd/wire"
 )

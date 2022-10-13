@@ -9,8 +9,8 @@ import (
 	"encoding/hex"
 	"testing"
 
+	. "github.com/chernyshev/bchd/bchutil"
 	"github.com/chernyshev/bchd/btcec/v2"
-	. "github.com/chernyshev/bchd/btcutil"
 	"github.com/chernyshev/bchd/chaincfg"
 )
 

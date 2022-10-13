@@ -11,9 +11,9 @@ import (
 	"fmt"
 	"strings"
 
+	"github.com/chernyshev/bchd/bchutil/base58"
+	"github.com/chernyshev/bchd/bchutil/bech32"
 	"github.com/chernyshev/bchd/btcec/v2"
-	"github.com/chernyshev/bchd/btcutil/base58"
-	"github.com/chernyshev/bchd/btcutil/bech32"
 	"github.com/chernyshev/bchd/chaincfg"
 	"golang.org/x/crypto/ripemd160"
 )

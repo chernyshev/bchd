@@ -1,4 +1,4 @@
-module github.com/chernyshev/bchd/btcutil
+module github.com/chernyshev/bchd/bchutil
 
 go 1.16
 

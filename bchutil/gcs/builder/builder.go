@@ -10,10 +10,10 @@ import (
 	"fmt"
 	"math"
 
+	"github.com/chernyshev/bchd/bchutil/gcs"
 	"github.com/chernyshev/bchd/chaincfg/chainhash"
 	"github.com/chernyshev/bchd/txscript"
 	"github.com/chernyshev/bchd/wire"
-	"github.com/chernyshev/bchd/btcutil/gcs"
 )
 
 const (

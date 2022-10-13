@@ -9,9 +9,9 @@ import (
 	"encoding/hex"
 	"testing"
 
-	"github.com/chernyshev/bchd/btcutil"
-	"github.com/chernyshev/bchd/btcutil/gcs"
-	"github.com/chernyshev/bchd/btcutil/gcs/builder"
+	"github.com/chernyshev/bchd/bchutil"
+	"github.com/chernyshev/bchd/bchutil/gcs"
+	"github.com/chernyshev/bchd/bchutil/gcs/builder"
 	"github.com/chernyshev/bchd/chaincfg"
 	"github.com/chernyshev/bchd/chaincfg/chainhash"
 	"github.com/chernyshev/bchd/txscript"

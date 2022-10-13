@@ -7,7 +7,7 @@ package hdkeychain_test
 import (
 	"testing"
 
-	"github.com/chernyshev/bchd/btcutil/hdkeychain"
+	"github.com/chernyshev/bchd/bchutil/hdkeychain"
 )
 
 // bip0032MasterPriv1 is the master private extended key from the first set of

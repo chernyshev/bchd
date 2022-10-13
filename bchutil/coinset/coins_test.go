@@ -11,10 +11,10 @@ import (
 	"fmt"
 	"testing"
 
+	"github.com/chernyshev/bchd/bchutil"
+	"github.com/chernyshev/bchd/bchutil/coinset"
 	"github.com/chernyshev/bchd/chaincfg/chainhash"
 	"github.com/chernyshev/bchd/wire"
-	"github.com/chernyshev/bchd/btcutil"
-	"github.com/chernyshev/bchd/btcutil/coinset"
 )
 
 type TestCoin struct {
